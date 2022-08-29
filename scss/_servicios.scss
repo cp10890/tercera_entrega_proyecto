@@ -1,0 +1,80 @@
+/*PAGINA SERVICIOS*/
+.pag-serv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 198px, 1fr, 1fr, 206px;
+    grid-template-areas:
+    "header header"
+    "main-serv main-serv"
+    "main-serv main-serv"
+    "footer footer";
+}
+.main-serv{
+    margin-top: 100px;
+    grid-area: main-serv;
+}
+.main-serv h2{
+    margin: 20px 20px 0px 20px;
+}
+.main-serv p{
+    margin: 0 20px;
+    padding: 20px;
+    text-align: justify;
+}
+@mixin descript {
+    position: absolute;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    div{
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+.list-serv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .serv{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        background-color: white;
+        margin: 20px;
+        transition: 0.5s ease;
+        img{
+            display: block;
+            object-fit: cover;
+            width: 200px;
+            height: 300px;
+        }
+        .descript{
+            @include descript();
+        }
+        &:hover{
+            scale: 1.1;
+        }
+    }
+}

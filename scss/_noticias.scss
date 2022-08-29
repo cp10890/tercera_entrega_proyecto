@@ -1,0 +1,22 @@
+/*PAGINA NOTICIAS*/
+.main-noti{
+    margin-top: 100px;
+}
+.main-noti section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.main-noti div{
+    margin: 30px;
+    border: #0e0e5e solid 2px;
+    text-align: center;
+    line-height: 1.6;
+}
+.main-noti button{
+    margin: 10px;
+    padding: 5px;
+    background-color: #0e0e5e;
+    color: white;
+}

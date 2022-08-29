@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="PC Ingeniería - Diseño estructural y construcción">
+    <meta name="keywords" content="Diseño Estructural, Estructuras, Ingeniería, Ingeniería Civil, construcción">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link rel="stylesheet" href="../css/style.css">
+    <title>PC Ingeniería - Contáctanos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../images/favicon/android-chrome-512x512.png" alt="Logo PCI" width="60px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../pages/proyectos.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Proyectos
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../pages/proyectos.html#ProyectosResidenciales">Residenciales</a></li>
+                      <li><a class="dropdown-item" href="../pages/proyectos.html#ProyectosOficina">Oficinas</a></li>
+                      <li><a class="dropdown-item" href="../pages/proyectos.html#ProyectosIndustriales">Industriales</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex col-lg-4" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-dark" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>    
+        </header>
+        <main class="main-cont">
+            <div class="fondo-cont">
+                <div>
+                    <h3 class="text-light mb-5 col-12 d-flex justify-content-center">
+                        Envíanos tus consultas
+                    </h3>
+                </div>
+                <div class="form">
+                    <form action="">
+                        <div class="mb-3 text-light col-md-12 col-lg-4">
+                            <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                          </div>
+                          <div class="mb-3 text-light col-lg-4">
+                            <label for="exampleFormControlInput1" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ejemplo@email.com">
+                          </div>
+                          <div class="mb-3 text-light col-lg-6">
+                            <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                            <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#enviar-datos">
+                                Enviar
+                            </button>
+                            <div class="modal fade" id="enviar-datos" tabindex="-1" aria-labelledby="enviar-datosLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="enviar-datosLabel">Envío de datos</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Su consulta ha sido enviada
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="d-flex flex-wrap justify-content-around align-items-center py-3 border-top">
+            <a class="col-xs-12 col-md-6 d-flex align-items-center justify-content-center link-dark text-decoration-none" href="../index.html">
+                <img src="../images/favicon/android-chrome-512x512.png" alt="Logo PCI Footer" width="50px">
+            </a>
+            <ul class="nav col-xs-12 col-md-6 justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-muted" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-muted" href="../pages/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-muted" href="../pages/proyectos.html">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-muted" href="../pages/servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-muted" href="../pages/noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2 text-muted" href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+            <p class="col-xs-12 col-md-12 m-3 text-center text-muted justify-content-center">
+                © 2022 PCI, SPA.
+            </p>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+nav{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 29%, rgba(106,129,255,1) 100%);
+}
+.btn{
+    background-color: darkblue;
+    color: whitesmoke;
+}
+@mixin descript {
+    position: absolute;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    div{
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+.proyectos-index{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .proy{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        background-color: white;
+        margin: 20px 0;
+        transition: 0.5s ease;
+        img{
+            display: block;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .descript{
+            @include descript();
+        }
+        &:hover{
+            scale: 1.1;
+        }
+    }
+}
+.main-index{
+    display: flex;
+    flex-direction: column;
+    grid-area: main-index;
+    .img1-index{
+        img{
+            width: 100%;
+            display: block;
+            margin-top: 100px;
+        }
+    }
+    h2{
+        margin: 20px 20px 0 20px;
+        padding: 0;
+    }
+}
+.nosotrosIndex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    padding-top: 0;
+}
+.main-index h2{
+    padding: 10px;
+}
+.main-index p{
+    padding: 10px;
+}
+.nosotros{
+    text-align: justify;
+    width: 40%;
+}
+.mapa{
+    width: 45%;
+}
+.mapa img{
+    width: 100%;
+}
+.proyectos-index{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.img-index{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    min-width: 300px;
+}
+footer{
+    background: linear-gradient(0deg, rgba(133,152,255,1) 0%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+}

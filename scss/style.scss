@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "index";
+@import "nosotros";
+@import "proyectos";
+@import "servicios";
+@import "noticias";
+@import "contacto";
+@media screen and (max-width:480px){
+    header img{
+        width: 70px;
+    }
+    body{
+        font-size: 0.8rem;
+    }
+    footer div img{
+        width: 30px;
+    }
+    footer div{
+        margin: 10px;
+    }
+    .logo-footer{
+        width: 100px;
+    }
+    .dropdown-item{
+        font-size: 0.8rem;
+    }
+    .nosotrosIndex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+    }
+    .nosotros{
+        width: 100%;
+    }
+    .mapa{
+        width: 100%;
+    }
+    .img-index{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            max-width: 90%;
+        }
+    }
+    .nues-emp div{
+        width: 450px;
+    }
+    .list-proy div{
+        width: 180px;
+    }
+    .menu-proy{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        div{
+            margin: 10px;
+        }
+    }
+    .main-noti div{
+        margin: 30px 0;    
+    }
+    .main-noti iframe{
+        width:100%;
+    }
+    .fondo-cont div{
+        width: 100%;
+    }
+    .cert{
+        position: relative;
+        height: 150px;
+        width: 150px;
+        background-color: white;
+        margin: 10px;
+        img{
+            display: block;
+            object-fit: scale-down;
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .form{
+        margin: 0;
+        width: 100%;
+    }
+}
+@media screen and (min-width:481px) and (max-width:768px){
+    header img{
+        width: 70px;
+    }
+    body{
+        font-size: 0.9rem;
+    }
+    footer div img{
+        width: 30px;
+    }
+    footer div{
+        margin: 10px;
+    }
+    .logo-footer{
+        width: 150px;
+    }
+    .dropdown-item{
+        font-size: 0.8rem;
+    }
+    .nosotrosIndex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .nosotrosIndex div{
+        width: 500px;
+    }
+    .nues-emp div{
+        width: 450px;
+    }
+    .menu-proy a{
+        font-size: 1rem;
+    }
+    .form{
+        width: 60%;
+    }
+}

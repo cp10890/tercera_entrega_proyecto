@@ -1,0 +1,129 @@
+/*PAGINA NOSOTROS*/
+.pag-nosotros{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 198px, 300px, 1fr, 1fr, 206px;
+    grid-template-areas:
+    "header header"
+    "main-nos main-nos"
+    "main-nos main-nos"
+    "main-nos main-nos"
+    "footer footer";
+}
+.main-nos{
+    grid-area: main-nos;
+}
+.img1-nos img{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.main-nos h2{
+    margin: 20px;
+}
+.main-nos p{
+    margin: 10px 0;
+}
+.nues-emp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    padding: 20px;
+    margin: 0 auto;
+}
+.img-personal img{
+    width: 100%;
+}
+.nuestra-empresa{
+    width: 40%;
+    margin: 0 35px;
+    text-align: justify;
+}
+@mixin descript {
+    position: absolute;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    p{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    div{
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+    }
+    &:hover{
+        opacity: 1;
+    }
+}
+.directores{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .director{
+        position: relative;
+        height: 300px;
+        width: 200px;
+        background-color: black;
+        margin: 20px;
+        transition: 0.5s ease;
+        img{
+            display: block;
+            object-fit: cover;
+            width: 200px;
+            height: 300px;
+        }
+        .descript{
+            @include descript();
+        }
+        &:hover{
+            scale: 1.1;
+        }
+    }
+}
+.certificados{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    .cert{
+        position: relative;
+        height: 200px;
+        width: 200px;
+        background-color: white;
+        margin: 20px;
+        transition: 0.5s ease;
+        img{
+            display: block;
+            object-fit: scale-down;
+            width: 200px;
+            height: 200px;
+        }
+        .descript{
+            @include descript();
+        }
+        &:hover{
+            scale: 1.1;
+        }
+    }
+}
