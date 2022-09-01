@@ -78,3 +78,11 @@
         }
     }
 }
+@media screen and (min-height:800px) and (min-width:1440px) {
+    .footer-serv{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+    }
+}

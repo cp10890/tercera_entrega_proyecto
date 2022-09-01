@@ -11,3 +11,11 @@
 form{
     width: 100%;
 }
+@media screen and (min-height:800px) and (min-width:375px) {
+    .footer-cont{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+    }
+}
